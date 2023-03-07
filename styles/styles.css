@@ -1,0 +1,237 @@
+@font-face {
+ font-family: "FiraSans";
+ font-style: normal;
+ font-weight: 400;
+ src: url("../fonts/FiraSans/FiraSans-400.woff2");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "FiraSans";
+ font-style: normal;
+ font-weight: 700;
+ src: url("../fonts/FiraSans/FiraSans-700.woff2");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "PTSans";
+ font-style: normal;
+ font-weight: 400;
+ src: url("../fonts/PTSans/PTSans-400.woff2");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "PTSans";
+ font-style: normal;
+ font-weight: 700;
+ src: url("../fonts/PTSans/PTSans-700.woff2");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "PTSans";
+ font-style: italic;
+ font-weight: 400;
+ src: url("../fonts/PTSans/PTSans-Italic-400.woff2");
+ font-display: swap;
+}
+
+html {
+ height: 100%;
+}
+
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ padding: 0;
+ border: 0;
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+
+body {
+ font-family: "PTSans", Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ color: #000000;
+ background-color: #ffffff;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ min-height: 100%;
+}
+
+.upper-header {
+ width: 1170px;
+ margin: 0 auto;
+ display: flex;
+}
+
+.upper-header-title {
+ font-family: "PTSans", Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ font-style: italic;
+ font-size: 14px;
+ line-height: 18px;
+ color: #ee3643;
+ margin-top: 13px;
+ margin-bottom: 13px;
+}
+
+.upper-header-adress {
+ font-size: 14px;
+ line-height: 18px;
+ color: #32425c;
+ margin-left: 176px;
+}
+
+.upper-header-phone {
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 18px;
+ color: #293449;
+ letter-spacing: 2px;
+ border: none;
+ background-color: #ffffff;
+ cursor: pointer;
+ margin-left: 31px;
+}
+
+.middle-header {
+ width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ background-color: #293449;
+}
+
+.middle-header-title-link {
+ width: 220px;
+ height: 50px;
+ background-color: #ee3643;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ margin-left: 115px;
+ position: relative;
+}
+
+.middle-header-title-link::before {
+ position: absolute;
+ content: "";
+ width: 220px;
+ height: 5px;
+ background-color: #b52933;
+ bottom: -5px;
+ left: 0;
+}
+
+.middle-header-search-field::placeholder {
+ color: #ffffff;
+}
+
+.middle-header-search-field {
+ background-color: #293449;
+ cursor: pointer;
+ border: none;
+ width: 500px;
+ height: 45px;
+ padding: 0;
+ padding-top: 4px;
+}
+
+.search-icon {
+ position: relative;
+ top: 5px;
+ cursor: pointer;
+ margin-left: 21px;
+ margin-right: 12px;
+}
+
+.enterance-button {
+ border: none;
+ background-color: #293449;
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 18px;
+ color: #ffffff;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ margin-left: 290px;
+ padding: 0;
+}
+
+.enterance-button-icon {
+ margin-right: 13px;
+}
+
+.lower-header {
+ width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ background-color: #3d546f;
+}
+
+.header-navigation {
+ display: flex;
+ align-items: center;
+}
+
+.lower-header-list {
+ list-style-type: none;
+ color: #ffffff;
+ display: flex;
+ cursor: pointer;
+ padding: 0;
+ margin-left: 115px;
+}
+
+.lower-header-item:not(:first-child) {
+ margin-left: 45px;
+}
+
+.lower-header-buttons-list {
+ list-style-type: none;
+ display: flex;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ display: flex;
+ align-items: center;
+ padding: 0;
+}
+
+.bookmark-button {
+ border: none;
+ background-color: #3d546f;
+ cursor: pointer;
+ margin-left: 140px;
+}
+
+.bucket-button {
+ border: none;
+ background-color: #3d546f;
+ cursor: pointer;
+ margin-left: 25px;
+}
+
+.order-button {
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 18px;
+ color: #ffffff;
+ letter-spacing: 2px;
+ background-color: #63a63e;
+ padding: 12px 10px 12px 10px;
+ border-radius: 4px;
+ cursor: pointer;
+ border: none;
+ margin-left: 26px;
+}
