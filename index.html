@@ -12,10 +12,10 @@
       <h1 class="upper-header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="upper-header-add">
       <p class="upper-header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <button class="upper-header-phone" type="button">
+      <a class="upper-header-phone" href="tel:+7(812)555-05-55">
          <svg class="phone-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.08912 5.07012C7.5036 4.51156 7.65223 3.92288 7.18346 3.40325C6.1315 1.93127 5.42402 1.021 4.98026 0.582635C4.13661 -0.250752 2.7488 -0.138023 2.01814 0.581922C1.62569 0.968612 1.49284 1.1014 1.08988 1.51069C-1.15464 3.75642 0.214183 8.5038 3.85302 12.1462C7.49103 15.7878 12.238 17.1574 14.4872 14.9069C14.859 14.5484 15.1739 14.2334 15.4221 13.971C16.1382 13.2142 16.2469 11.8876 15.4174 11.0257C14.9922 10.5839 14.1242 9.91057 12.5903 8.81335C12.1205 8.39327 11.5634 8.48431 11.0527 8.81936C10.8071 8.98052 10.6283 9.14355 10.2907 9.48145L9.67775 10.0948C9.59701 10.1756 8.50069 9.62653 7.43648 8.56127C6.37168 7.49543 5.82302 6.39905 5.90338 6.3187L6.5168 5.70494C6.6239 5.59774 6.6751 5.54583 6.74077 5.47682C6.87758 5.33304 6.99085 5.20255 7.08912 5.07012ZM10.8085 11.2263L11.4216 10.6129C11.6074 10.4269 11.7278 10.3126 11.8257 10.2337C13.1695 11.1987 13.9477 11.8055 14.2656 12.1357C14.4564 12.334 14.4267 12.6959 14.2608 12.8712C14.0312 13.1139 13.733 13.4124 13.3669 13.7654C11.9125 15.2205 8.08063 14.1149 4.98401 11.0153C1.88642 7.91464 0.781413 4.08222 2.22486 2.63798C2.62619 2.23037 2.75335 2.10328 3.14019 1.72211C3.28523 1.57919 3.68032 1.5471 3.85677 1.7214C4.19842 2.0589 4.83218 2.87038 5.76447 4.16905C5.71621 4.22897 5.65593 4.29668 5.58257 4.37378C5.52873 4.43037 5.48387 4.47584 5.38581 4.574L4.77299 5.18715C3.73048 6.22959 4.61832 8.00376 6.30548 9.69258C7.99149 11.3802 9.76633 12.2691 10.8085 11.2263ZM9.32792 0.0555403C12.7866 0.474771 15.529 3.21721 15.9482 6.67587L14.3679 6.93926C14.0628 4.15336 11.8504 1.94103 9.06453 1.63589L9.32792 0.0555403V0.0555403ZM8.80091 3.2176C10.9141 3.40661 12.5972 5.08966 12.7862 7.20288L11.2008 7.46711C11.1335 6.0264 9.97738 4.8703 8.53667 4.80302L8.80091 3.2176V3.2176Z" fill="#293449"/>
-         </svg>+7 (812) 555-05-55</button>
+         </svg>+7 (812) 555-05-55</a>
       </div>
    </section>
    <section class="middle-header">
@@ -42,9 +42,9 @@
                </svg></button>
             <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="post">
                <div class="entrance-input-container">
-               <input class="login-input" type="text" placeholder="Логин" id="login" name="entrance-login">
+               <input class="login-input" type="text" placeholder="Логин" id="login" name="entrance-login" required>
                <label class="visually-hidden" for="login"></label>
-               <input class="password-input" type="text" placeholder="Пароль" id="password" name="entrance-password">
+               <input class="password-input" type="text" placeholder="Пароль" id="password" name="entrance-password" required>
                <label class="visually-hidden" for="password"></label>
                </div>
                <div class="entrance-buttons-container">
@@ -240,7 +240,6 @@
                   <path d="M21.5916 37.0871C21.9042 36.7764 22.0818 36.347 22.0818 35.9058C22.0818 35.4666 21.9042 35.0372 21.5916 34.7246C21.281 34.4139 20.8516 34.2351 20.411 34.2351C19.9712 34.2351 19.5404 34.4139 19.2298 34.7246C18.9185 35.0352 18.7403 35.4666 18.7403 35.9058C18.7403 36.347 18.9185 36.7764 19.2298 37.0871C19.5417 37.3997 19.9712 37.5766 20.411 37.5766C20.8516 37.5766 21.281 37.3997 21.5916 37.0871Z" fill="white"/>
                   </svg>                                             
             </div>
-         </li>
       </ul>
    </section>
    <div class="catalog-container">
@@ -527,7 +526,7 @@
    </div>
    <div class="right-footer">
       <p class="right-footer-text">Обратная связь:</p>
-      <span class="right-footer-email">mail@htmlacademy.ru</span>
+      <a class="right-footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       <p class="right-footer-text-more">Получайте лучшие предложения</p>
       <form class="right-footer-form" action="https://echo.htmlacademy.ru/" method="post">
          <input class="email-field" type="email" placeholder="email@example.com" id="email" name="email-place" required>

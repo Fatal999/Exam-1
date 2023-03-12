@@ -76,6 +76,7 @@ body {
 
 .upper-header-add {
  display: flex;
+ align-items: center;
 }
 
 .upper-header-title {
@@ -106,6 +107,7 @@ body {
  background-color: #ffffff;
  cursor: pointer;
  margin-left: 31px;
+ text-decoration: none;
 }
 
 .phone-icon {
@@ -114,14 +116,15 @@ body {
 
 .middle-header {
  background-color: #293449;
+ min-height: 45px;
 }
 
 .middle-header-navigation {
  width: 1170px;
  margin: 0 auto;
- min-height: 45px;
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
 }
 
 .middle-header-add {
@@ -172,6 +175,10 @@ body {
 .middle-header-search-field:focus {
  outline: 2px solid #ffbf47;
 }
+
+.middle-header-search-field:disabled {
+  opacity: 50%;
+ }
 
 .search-icon {
  position: relative;
@@ -493,8 +500,9 @@ body {
  margin: 0 auto;
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
  background-color: #3d546f;
- height: 70px;
+ min-height: 70px;
 }
 
 .header-navigation {
@@ -507,7 +515,8 @@ body {
  color: #ffffff;
  display: flex;
  justify-content: space-between;
- width: 765px;
+ flex-wrap: wrap;
+ width: 775px;
  padding: 0;
  margin-top: 0;
  margin-bottom: 12px;
@@ -543,13 +552,13 @@ body {
  list-style-type: none;
  display: flex;
  align-items: center;
+ flex-wrap: wrap;
  padding: 0;
  margin: 0;
 }
 
 .lower-header-buttons-item {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -582,6 +591,7 @@ body {
  border: none;
  margin-left: 26px;
  padding: 0;
+ margin-bottom: 8px;
 }
 
 .order-button:hover {
@@ -1335,7 +1345,7 @@ body {
 
 .card-item {
  width: 270px;
- height: 380px;
+ min-height: 380px;
  position: relative;
  display: flex;
  flex-direction: column;
@@ -1592,6 +1602,8 @@ body {
  margin-top: 65px;
  margin-bottom: 0;
  display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
 }
 
 .service-item {
@@ -1601,10 +1613,6 @@ body {
  border-radius: 2px;
  display: flex;
  flex-direction: column;
-}
-
-.service-item:not(:first-child) {
- margin-left: 30px;
 }
 
 .service-item-icon {
@@ -1694,6 +1702,7 @@ body {
  border-radius: 2px;
  cursor: pointer;
  margin-top: 52px;
+ margin-bottom: 20px;
  padding: 0;
  border: none;
 }
@@ -1840,6 +1849,7 @@ body {
  line-height: 24px;
  color: #ffd180;
  cursor: pointer;
+ text-decoration: none;
 }
 
 .right-footer-email:hover {
@@ -1887,6 +1897,10 @@ body {
  outline: 2px solid #ffbf47;
 }
 
+.email-field:disabled {
+  opacity: 50%;
+ }
+
 .email-button {
  display: flex;
  justify-content: center;
@@ -1915,6 +1929,7 @@ body {
 .lower-footer-container {
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
  width: 1170px;
  margin: 0 auto;
 }
@@ -1931,6 +1946,7 @@ body {
 
 .lower-footer-text-container {
  display: flex;
+ flex-wrap: wrap;
 }
 
 .lower-footer-text-add {
