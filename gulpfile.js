@@ -7,7 +7,7 @@ import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
+// import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from "gulp-stacksvg";
 import { deleteAsync } from 'del';
@@ -55,15 +55,15 @@ export function processScripts () {
 
 export function optimizeImages () {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(gulpIf(!isDevelopment, squoosh()))
+    // .pipe(gulpIf(!isDevelopment, squoosh()))
     .pipe(gulp.dest('build/img'))
 }
 
 export function createWebp () {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh({
-      webp: {}
-    }))
+    // .pipe(squoosh({
+    //   webp: {}
+    // }))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -131,7 +131,7 @@ function deleteBuild () {
   return deleteAsync('build');
 }
 
-export function buildProd (done) {
+export function build (done) {
   isDevelopment = false;
   gulp.series(
     deleteBuild,
@@ -139,7 +139,7 @@ export function buildProd (done) {
   )(done);
 }
 
-export function runDev (done) {
+export function start (done) {
   gulp.series(
     deleteBuild,
     compileProject,
