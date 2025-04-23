@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Berries</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="./fonts/Comfortaa/Comfortaa-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Raleway/Raleway-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body class="page-body">
+
+  <header class="header">
+    <nav class="header__navigation">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <span class="visually-hidden">Логотип магазина.</span>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+        </button>
+      </div>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Каталог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Новости</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Контакты</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Заказать</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="promo">
+      <h1 class="promo__title">Ягоды<br> с доставкой </h1>
+      <ul class="promo__list">
+        <li class="promo__item">
+          <svg class="promo__item-icon promo__item-icon--leaf" width="18" height="20">
+            <use href="./img/icons/stack.svg#leaf"></use>
+          </svg>
+          <p class="promo__item-description">Отборные ягоды</p>
+        </li>
+        <li class="promo__item promo__item--snowflake">
+          <svg class="promo__item-icon promo__item-icon--snowflake" width="24" height="24">
+            <use xlink:href="./img/icons/stack.svg#snowflake"></use>
+          </svg>
+          <p class="promo__item-description">Натуральный вкус сохранён методом шоковой заморозки</p>
+        </li>
+        <li class="promo__item">
+          <svg class="promo__item-icon promo__item-icon--moto" width="32" height="32">
+            <use xlink:href="./img/icons/stack.svg#moto"></use>
+          </svg>
+          <p class="promo__item-description">Доставка по Санкт-Петербургу</p>
+        </li>
+      </ul>
+      <a class="promo__link button" href="form.html">Заказать</a>
+    </section>
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/raspberry.jpg" srcset="./img/index/raspberry@2x.jpg 2x"
+                width="344" height="180" alt="Малина.">
+            </picture>
+            <h3 class="catalog__caption">Малина</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">350 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/blackberry.jpg" srcset="./img/index/blackberry@2x.jpg 2x"
+                width="344" height="180" alt="Ежевика.">
+            </picture>
+            <h3 class="catalog__caption">Ежевика</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">550 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/cowberry.jpg" srcset="./img/index/cowberry@2x.jpg 2x"
+                width="344" height="180" alt="Брусника.">
+            </picture>
+            <h3 class="catalog__caption">Брусника</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">390 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/strawberry.jpg" srcset="./img/index/strawberry@2x.jpg 2x"
+                width="344" height="180" alt="Клубника.">
+            </picture>
+            <h3 class="catalog__caption">Клубника</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">450 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/cherry.jpg" srcset="./img/index/cherry@2x.jpg 2x" width="344"
+                height="180" alt="Вишня.">
+            </picture>
+            <h3 class="catalog__caption">Вишня</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">375 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/gooseberry.jpg" srcset="./img/index/gooseberry@2x.jpg 2x"
+                width="344" height="180" alt="Крыжовник.">
+            </picture>
+            <h3 class="catalog__caption">Крыжовник</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">300 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item catalog__item--nomobile">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/blueberry.jpg" srcset="./img/index/blueberry@2x.jpg 2x"
+                width="344" height="180" alt="Голубика.">
+            </picture>
+            <h3 class="catalog__caption">Голубика</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">510 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+        <li class="catalog__item catalog__item--nomobile">
+          <a class="catalog__link" href="#">
+            <picture>
+              <img class="catalog__image" src="./img/index/cranberry.jpg" srcset="./img/index/cranberry@2x.jpg 2x"
+                width="344" height="180" alt="Клюква.">
+            </picture>
+            <h3 class="catalog__caption">Клюква</h3>
+          </a>
+          <div class="catalog__container">
+            <span class="catalog__container-price">320 ₽</span>
+            <p class="catalog__container-weight">за 1 кг</p>
+          </div>
+          <button class="catalog__item-button button">Заказать</button>
+        </li>
+      </ul>
+    </section>
+    <section class="news">
+      <h3 class="news__title">Что новенького?</h3>
+      <ul class="news__list">
+        <li class="news__item">
+          <h4 class="news__item-title">Новый урожай клубники</h4>
+          <p class="news__item-description">К нам поступила свежая сочная ароматная клубника<br
+              class="news__item-description-mobile"> из Алтайского края. Крупные
+            отборные ягоды можно приобрести свежими<br class="news__item-description-tablet"> от 200 гр, или
+            замороженными<br class="news__item-description-tablet"> от 1 кг. Поторопитесь, сезон клубники
+            короткий и свежие ягоды скоро закончатся.</p>
+          <span class="news__item-date">22 июня 2022</span>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
+          </svg>
+        </li>
+        <li class="news__item">
+          <h4 class="news__item-title news__item-title--special">В июле дарим скидку 15% на все свежие ягоды</h4>
+          <p class="news__item-description">Свежие ягоды урожая этого года<br class="news__item-description-dektop"> со
+            скидкой 15%. Клубнику, малину, голубику,
+            вишню доставим<br class="news__item-description-tablet news__item-description-tablet--desktop"> от 200 гр.
+          </p>
+          <span class="news__item-date">15 июня 2022</span>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
+          </svg>
+        </li>
+        <li class="news__item">
+          <h4 class="news__item-title news__item-title--mix">Микс из ягод</h4>
+          <p class="news__item-description">Мы приготовим для вас смеси<br>
+            из различных замороженных ягод<br class="news__item-description-dektop"> по вашему пожеланию. Ягодные смеси
+            удобно использовать для приготовления
+            напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить<br
+              class="news__item-description-mobile">
+            их естественный вкус<br class="news__item-description-tablet news__item-description-tablet--desktop"> и
+            аромат.</p>
+          <span class="news__item-date">02 июня 2022</span>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h5 class="contacts__title">Где забрать ягоды?</h5>
+        <p class="contacts__description">Забери ягоды с нашего склада<br> по адресу:</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link"
+              href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F+%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0,+101,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+190013/@59.9133507,30.3286491,17z/data=!3m1!4b1!4m6!3m5!1s0x469630519ea47935:0x3458dd62ea82672d!8m2!3d59.913348!4d30.331224!16s%2Fg%2F11c2dyg7qr?hl=ru&entry=ttu">
+              <svg class="contacts__item-icon contacts__item-icon--leaf" width="16" height="24">
+                <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
+              </svg>
+              Набережная Обводного канала,<br> 101
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+79105244118">
+              <svg class="contacts__item-icon contacts__item-icon--phone" width="16" height="20">
+                <use xlink:href="./img/icons/stack.svg#phone"></use>
+              </svg>
+              + 7 910 524 41 18
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@yagoda.ru">
+              <svg class="contacts__item-icon contacts__item-icon--mail" width="18" height="14">
+                <use xlink:href="./img/icons/stack.svg#mail"></use>
+              </svg>
+              info@yagoda.ru
+            </a>
+          </li>
+        </ul>
+      </div>
+      <noscript>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/index/map-noscript-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/index/map-noscript-tablet.jpg">
+          <img class="contacts__noscript" src="./img/index/map-noscript-mobile.jpg" width="320" height="372"
+            alt="Как найти, если вы выключили JS.">
+        </picture>
+      </noscript>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223623!2d30.328649077406226!3d59.91335066413615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1694071543154!5m2!1sru!2sru"
+        width="320" height="372" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo" href="#">
+        <span class="visually-hidden">Логотип магазина.</span>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__link--telegram" href="#">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <svg class="footer__intensive-icon" width="20" height="24">
+          <use xlink:href="./img/icons/stack.svg#htmlacademy"></use>
+        </svg>
+        <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/menu-index.js"></script>
+
+</body>
+
+</html>
